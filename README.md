@@ -4,11 +4,7 @@
 
  We shall establish an iFEM-like package or a simplified version with certain extensions, named mFEM toolbox.
 
-- The toolbox has two important folders：fem and variational.
-
-  - fem: It includes all kinds of source code.
-  - variational: A new feature is the variational formulation based programming. It extends the applicaton in fem folder.
-                 We have already provided P1, P2 and P3 Lagrange elements for one dimensional and two dimensional problems as well as    the vectorized problems, e.g. the linear elasticity problem.  
+- fem: It includes all kinds of source code. 
 
 - example: All examples corresponding to fem and variational are placed in the example folder.
 
@@ -63,17 +59,6 @@ For the third fomulation, only Dirichlet conditions are used in view of the prac
 ## Mixed FEM
   
    The mixed FEM is applied to solve the biharmonic equation, a special case of plate bending problems.
-   
-
-## Variational formulation based programming
-
-  - A variational formulation based programming is shown for 1-D and 2-D problems in Folder variational. The arrangement is entirely       process-oriented and thus easy to understand. 
-  
-  - As in FreeFem++, fundamental functions --- int2d.m and int1d.m are designed to match the variational formulation of the underlying    PDEs. 
-  
-  - We also provide functions int2dvec.m and int1dvec.m to resolve vectorized problems.
-  
-  - At present, only Lagrange elements of order up to three are provided, including 1-D problems, Poisson equation, linear elasticity problem and mixed FEM of biharmonic equation. 
 
   
 ## Adaptive finite element method and Newest-node bisection
@@ -96,17 +81,3 @@ The MATLAB codes are in Folder afem.
   
   - For 2D and 3D linear elements, only slight changes of 1D problems are needed since they can be regarded as 1D problems.
     See the document for details (two-dimensional problem).
-
-
-Undo: 
-
-	   
-           - mesh generation   
-   
-           - 3-D FEM      
-
-           - mixed FEM (e.g. Stokes equation)   
-  
-            - time-dependent problems     
-
-            - ... ...
